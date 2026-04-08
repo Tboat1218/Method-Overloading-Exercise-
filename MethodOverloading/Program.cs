@@ -2,6 +2,17 @@
 {
     public class Program
     {
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+
+            Console.WriteLine(p.Add(3, 2));           // 5
+            Console.WriteLine(p.Add(1.5m, 2.5m));     // 4.0
+            Console.WriteLine(p.Add(3, 2, true));      // "5 dollars"
+            Console.WriteLine(p.Add(0, 1, true));      // "1 dollar"
+            Console.WriteLine(p.Add(8, 8, true));      // "16 dollars"
+        }
+
         public int Add(int number1, int number2)
         {
             return number1 + number2;
